@@ -1,0 +1,49 @@
+[30-Jul-2025 08:32:47 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[06-Aug-2025 11:36:36 UTC] Cron reschedule event error for hook: woocommerce_geoip_updater, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"fifteendays","args":[],"interval":1296000}
+[07-Aug-2025 11:48:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_woocommerce_currency_symbol() in /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/wallox-addon/elementor-templates/shop-one.php:38
+Stack trace:
+#0 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/wallox-addon/includes/Widgets/Shop.php(70): include()
+#1 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/elementor/includes/base/controls-stack.php(2374): Layerdrops\Wallox\Widgets\Shop->render()
+#2 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(636): Elementor\Controls_Stack->render_by_mode()
+#3 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/elementor/includes/base/widget-base.php(774): Elementor\Widget_Base->render_content()
+#4 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/elementor/includes/base/element-base.php(492): Elementor\Widget_Base->print_content()
+#5 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/elementor/modules/element-cache/module.php(91): Elementor\Element_Base->print_element()
+#6 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/shortcodes.php(434): Elementor\Modules\ElementCache\Module->Elementor\Modules\ElementCache\{closure}(Array, '', 'elementor-eleme...')
+#7 [internal function]: do_shortcode_tag(Array)
+#8 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(elemen...', 'do_shortcode_ta...', '<div class="ele...')
+#9 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/elementor/core/base/document.php(1877): do_shortcode('<div class="ele...')
+#10 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/elementor/core/base/document.php(1210): Elementor\Core\Base\Document->print_elements(Array)
+#11 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/elementor/includes/frontend.php(1168): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#12 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/elementor/includes/frontend.php(1063): Elementor\Frontend->get_builder_content(435)
+#13 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/class-wp-hook.php(324): Elementor\Frontend->apply_builder_in_content('<section>\n\t\t\t\t\t...')
+#14 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/plugin.php(205): WP_Hook->apply_filters('<section>\n\t\t\t\t\t...', Array)
+#15 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/post-template.php(256): apply_filters('the_content', '<section>\n\t\t\t\t\t...')
+#16 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(190): the_content()
+#17 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#18 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/elementor/modules/page-templates/module.php(207): call_user_func(Array)
+#19 /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/elementor/modules/page-templates/templates/header-footer.php(19): Elementor\Modules\PageTemplates\Module->print_content()
+#20 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/template-loader.php(106): include('/home/customer/...')
+#21 /home/customer/www/rodri-go.co.uk/public_html/wp-blog-header.php(19): require_once('/home/customer/...')
+#22 /home/customer/www/rodri-go.co.uk/public_html/index.php(17): require('/home/customer/...')
+#23 {main}
+  thrown in /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/wallox-addon/elementor-templates/shop-one.php on line 38
+[09-Aug-2025 20:00:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function WC() in /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/wallox-addon/common/functions.php:887
+Stack trace:
+#0 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/class-wp-hook.php(324): wallox_auto_add_product_to_cart('')
+#1 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/template-loader.php(13): do_action('template_redire...')
+#4 /home/customer/www/rodri-go.co.uk/public_html/wp-blog-header.php(19): require_once('/home/customer/...')
+#5 /home/customer/www/rodri-go.co.uk/public_html/index.php(17): require('/home/customer/...')
+#6 {main}
+  thrown in /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/wallox-addon/common/functions.php on line 887
+[10-Aug-2025 03:36:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function WC() in /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/wallox-addon/common/functions.php:887
+Stack trace:
+#0 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/class-wp-hook.php(324): wallox_auto_add_product_to_cart('')
+#1 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home/customer/www/rodri-go.co.uk/public_html/wp-includes/template-loader.php(13): do_action('template_redire...')
+#4 /home/customer/www/rodri-go.co.uk/public_html/wp-blog-header.php(19): require_once('/home/customer/...')
+#5 /home/customer/www/rodri-go.co.uk/public_html/index.php(17): require('/home/customer/...')
+#6 {main}
+  thrown in /home/customer/www/rodri-go.co.uk/public_html/wp-content/plugins/wallox-addon/common/functions.php on line 887
