@@ -2674,7 +2674,7 @@ ul {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.45);
   z-index: 2;
 }
 
@@ -4217,6 +4217,54 @@ ul {
 .brand-one__main-content .swiper-slide img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+
+/* Before / After gallery slider — uniform fixed height */
+.before-after-slider .swiper-container,
+.before-after-slider .thm-swiper__slider {
+  height: 420px;
+}
+
+.before-after-slider .swiper-slide {
+  height: 420px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.before-after-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  display: block;
+  border-radius: 8px;
+  -webkit-transition: transform 500ms ease;
+  transition: transform 500ms ease;
+  filter: none;
+}
+
+.before-after-slider .swiper-slide img:hover {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+  filter: none;
+}
+
+@media (max-width: 767px) {
+  .before-after-slider .swiper-container,
+  .before-after-slider .thm-swiper__slider,
+  .before-after-slider .swiper-slide {
+    height: 260px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .before-after-slider .swiper-container,
+  .before-after-slider .thm-swiper__slider,
+  .before-after-slider .swiper-slide {
+    height: 340px;
+  }
 }
 
 /*--------------------------------------------------------------
