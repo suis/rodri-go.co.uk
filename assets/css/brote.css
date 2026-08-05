@@ -1890,60 +1890,140 @@ ul {
   padding: 35px 0 20px 0px;
 }
 
-/* Checkatrade badge link wrapper */
-.checkatrade-badge {
+/* Checkatrade badge widget */
+.ct-widget {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 5px 10px 4px;
+  -webkit-transition: box-shadow 300ms ease, transform 300ms ease;
+  transition: box-shadow 300ms ease, transform 300ms ease;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.ct-widget:hover {
+  -webkit-box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* Row 1: stars + score side by side */
+.ct-widget__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.ct-widget__stars {
   display: block;
-  line-height: 0;
-  -webkit-transition: opacity 300ms ease, transform 300ms ease;
-  transition: opacity 300ms ease, transform 300ms ease;
+  color: #f5a623;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 2px;
 }
 
-.checkatrade-badge:hover {
-  opacity: 0.85;
-  -webkit-transform: scale(1.04);
-  transform: scale(1.04);
-}
-
-.checkatrade-badge img {
+.ct-widget__score {
   display: block;
-  width: auto;
-  height: auto;
+  font-size: 15px;
+  font-weight: 700;
+  color: #f5a623;
+  line-height: 1;
+  margin-bottom: 1px;
 }
 
+.ct-widget__outof {
+  font-size: 11px;
+  font-weight: 500;
+  color: #f5a623;
+}
+
+/* Row 2: Checkatrade logo text */
+.ct-widget__logo {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.ct-widget__ch {
+  color: #003087;
+}
+
+.ct-widget__ck {
+  color: #e30613;
+  font-weight: 900;
+}
+
+.ct-widget__trade {
+  color: #003087;
+}
+
+/* Row 3: review count */
+.ct-widget__reviews {
+  display: block;
+  font-size: 10px;
+  color: #888;
+  line-height: 1;
+}
+
+/* Desktop / mobile visibility (unchanged logic) */
 @media only screen and (max-width: 600px) {
-.checkatrade {
-  display: none; 
-  margin-left: auto; 
-  margin-right: auto; 
-  padding-top: 20px;
+  .checkatrade {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
   }
 }
 
 @media only screen and (min-width: 601px) {
-.checkatrade {
-  display: block; 
-  margin-left: auto; 
-  margin-right: auto; 
-  padding-top: 20px;
+  .checkatrade {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-.checkatrademob {
-  display: block; 
-  margin-left: auto; 
-  margin-right: auto; 
-  padding-top: 0px;
-  padding-bottom: 20px;
+  .checkatrademob {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    padding-bottom: 20px;
   }
 }
 
 @media only screen and (min-width: 601px) {
-.checkatrademob {
-  display: none; 
-  margin-left: auto; 
-  margin-right: auto; 
-  padding-top: 20px;
+  .checkatrademob {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
   }
 }
 
