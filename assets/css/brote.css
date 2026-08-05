@@ -1891,6 +1891,17 @@ ul {
 }
 
 /* Checkatrade badge widget */
+
+/* Centring container — sits between __left and __right in the wrapper */
+.main-menu-three__ct-centre {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
 .ct-widget {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1900,68 +1911,64 @@ ul {
   -ms-flex-direction: column;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   line-height: 1;
   text-decoration: none;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  padding: 5px 10px 4px;
-  -webkit-transition: box-shadow 300ms ease, transform 300ms ease;
-  transition: box-shadow 300ms ease, transform 300ms ease;
+  background: transparent;
+  border: none;
+  padding: 0;
   cursor: pointer;
-  vertical-align: middle;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+  white-space: nowrap;
 }
 
 .ct-widget:hover {
-  -webkit-box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-  -webkit-transform: translateY(-1px);
-  transform: translateY(-1px);
+  opacity: 0.8;
   text-decoration: none;
 }
 
-/* Row 1: stars + score side by side */
-.ct-widget__top {
+/* Row 1: stars + score on same line */
+.ct-widget__row1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  margin-bottom: 2px;
 }
 
 .ct-widget__stars {
-  display: block;
+  display: inline-block;
   color: #f5a623;
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-size: 18px;
+  letter-spacing: 2px;
   line-height: 1;
-  margin-bottom: 2px;
 }
 
 .ct-widget__score {
-  display: block;
-  font-size: 15px;
+  display: inline-block;
+  font-size: 20px;
   font-weight: 700;
   color: #f5a623;
   line-height: 1;
-  margin-bottom: 1px;
 }
 
 .ct-widget__outof {
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   color: #f5a623;
 }
 
-/* Row 2: Checkatrade logo text */
+/* Row 2: Checkatrade brand name */
 .ct-widget__logo {
   display: block;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .ct-widget__ch {
@@ -1980,33 +1987,19 @@ ul {
 /* Row 3: review count */
 .ct-widget__reviews {
   display: block;
-  font-size: 10px;
+  font-size: 12px;
   color: #888;
   line-height: 1;
 }
 
-/* Desktop / mobile visibility (unchanged logic) */
+/* Desktop / mobile visibility */
 @media only screen and (max-width: 600px) {
+  .main-menu-three__ct-centre {
+    display: none;
+  }
   .checkatrade {
     display: none;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
   }
-}
-
-@media only screen and (min-width: 601px) {
-  .checkatrade {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
   .checkatrademob {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -2019,11 +2012,16 @@ ul {
 }
 
 @media only screen and (min-width: 601px) {
+  .main-menu-three__ct-centre {
+    display: block;
+  }
+  .checkatrade {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
   .checkatrademob {
     display: none;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
   }
 }
 
