@@ -1965,14 +1965,16 @@ ul {
 /* Row 2: Checkatrade brand name */
 .ct-widget__logo {
   display: block;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 800;
   line-height: 1;
   margin-bottom: 3px;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: -0.02em;
 }
 
 .ct-widget__ch {
-  color: #003087;
+  color: #ff4040;
 }
 
 .ct-widget__ck {
