@@ -1964,7 +1964,12 @@ ul {
 
 /* Row 2: Checkatrade brand name */
 .ct-widget__logo {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 20px;
   font-weight: 800;
   line-height: 1;
@@ -1973,17 +1978,24 @@ ul {
   letter-spacing: -0.02em;
 }
 
-.ct-widget__ch {
+/* The red circle-tick SVG icon replacing the "C" */
+.ct-widget__icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1px;
+  flex-shrink: 0;
+}
+
+/* "hecka" in coral red */
+.ct-widget__hecka {
   color: #ff4040;
 }
 
-.ct-widget__ck {
-  color: #e30613;
-  font-weight: 900;
-}
-
+/* "trade" in dark navy */
 .ct-widget__trade {
-  color: #003087;
+  color: #1a1a4e;
 }
 
 /* Row 3: review count */
