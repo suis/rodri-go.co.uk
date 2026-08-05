@@ -1890,12 +1890,31 @@ ul {
   padding: 35px 0 20px 0px;
 }
 
+/* Checkatrade badge link wrapper */
+.checkatrade-badge {
+  display: block;
+  line-height: 0;
+  -webkit-transition: opacity 300ms ease, transform 300ms ease;
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.checkatrade-badge:hover {
+  opacity: 0.85;
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.checkatrade-badge img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
 @media only screen and (max-width: 600px) {
 .checkatrade {
   display: none; 
   margin-left: auto; 
   margin-right: auto; 
-  width: auto; 
   padding-top: 20px;
   }
 }
@@ -1905,7 +1924,6 @@ ul {
   display: block; 
   margin-left: auto; 
   margin-right: auto; 
-  width: auto; 
   padding-top: 20px;
   }
 }
@@ -1915,7 +1933,6 @@ ul {
   display: block; 
   margin-left: auto; 
   margin-right: auto; 
-  width: auto; 
   padding-top: 0px;
   padding-bottom: 20px;
   }
@@ -1926,7 +1943,6 @@ ul {
   display: none; 
   margin-left: auto; 
   margin-right: auto; 
-  width: auto; 
   padding-top: 20px;
   }
 }
