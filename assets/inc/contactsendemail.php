@@ -1,7 +1,7 @@
 <?php
 // === CONFIG ===
 define("RECIPIENT_NAME", "RODRI-GO");
-define("RECIPIENT_EMAIL", "info@rodri-go.co.uk");
+define("RECIPIENT_EMAIL", "rodrigo7@gmail.com");
 
 // Form inputs
 $name     = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : "";
