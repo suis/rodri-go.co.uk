@@ -1766,6 +1766,18 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Top row: logo | badge | phone+button */
+.main-menu-three__top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1773,6 +1785,23 @@ ul {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 15px 0 10px;
+  width: 100%;
+}
+
+/* Bottom row: nav menu centred */
+.main-menu-three__bottom-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 0 10px;
+  border-top: 1px solid #f0f0f0;
+  width: 100%;
 }
 
 .main-menu-three__left {
@@ -1797,11 +1826,11 @@ ul {
 .main-menu-three__main-menu-three-box {
   display: block;
   float: none;
-  margin-left: 30px;
+  margin-left: 0;
   padding-top: 0;
 }
 
-/* Badge sits in its own centred column between left and right */
+/* Badge container in top row */
 .main-menu-three__ct-centre {
   position: static;
   left: auto;
@@ -1820,7 +1849,6 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 20px;
 }
 
 .main-menu-three__right {
@@ -1846,7 +1874,7 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 60px;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .main-header-three__top-social a {
