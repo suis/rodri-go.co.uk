@@ -1763,25 +1763,64 @@ ul {
 
 .main-menu-three__wrapper {
   position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px 0 10px;
 }
 
 .main-menu-three__left {
-  float: left;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .main-menu-three__logo {
   display: block;
-  float: left;
-  margin-right: 240px;
-  padding: 25px 0;
+  float: none;
+  margin-right: 0;
+  padding: 0;
 }
 
 .main-menu-three__main-menu-three-box {
   display: block;
-  float: left;
-  margin-left: 50px;
+  float: none;
+  margin-left: 30px;
+  padding-top: 0;
+}
+
+/* Badge sits in its own centred column between left and right */
+.main-menu-three__ct-centre {
+  position: static;
+  left: auto;
+  top: auto;
+  -webkit-transform: none;
+  transform: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .main-menu-three__right {
@@ -1789,10 +1828,13 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: right;
+  float: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .main-header-three__top-social {
@@ -1804,7 +1846,7 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 60px;
-  padding: 48.5px 0;
+  padding: 20px 0;
 }
 
 .main-header-three__top-social a {
@@ -2035,7 +2077,9 @@ ul {
 
 @media only screen and (min-width: 601px) {
   .main-menu-three__ct-centre {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .checkatrade {
     display: -webkit-inline-box;
