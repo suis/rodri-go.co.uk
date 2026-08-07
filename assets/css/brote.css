@@ -1896,7 +1896,7 @@ ul {
 .main-menu-three__ct-centre {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 38%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -1936,28 +1936,28 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
   margin-bottom: 2px;
 }
 
 .ct-widget__stars {
   display: inline-block;
   color: #f5a623;
-  font-size: 18px;
-  letter-spacing: 2px;
+  font-size: 13px;
+  letter-spacing: 1px;
   line-height: 1;
 }
 
 .ct-widget__score {
   display: inline-block;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
   color: #f5a623;
   line-height: 1;
 }
 
 .ct-widget__outof {
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 600;
   color: #f5a623;
 }
@@ -1970,7 +1970,7 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 800;
   line-height: 1;
   margin-bottom: 3px;
@@ -1980,8 +1980,8 @@ ul {
 
 /* The red circle-tick SVG icon replacing the "C" */
 .ct-widget__icon {
-  width: 22px;
-  height: 22px;
+  width: 15px;
+  height: 15px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 1px;
@@ -2001,12 +2001,12 @@ ul {
 /* Row 3: review count */
 .ct-widget__reviews {
   display: inline-block;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
   color: #5b5fef;
   background-color: #f0efeb;
   border-radius: 20px;
-  padding: 3px 10px;
+  padding: 2px 8px;
   line-height: 1.4;
 }
 
